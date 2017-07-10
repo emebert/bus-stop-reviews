@@ -1,0 +1,93 @@
+body {
+	text-align: center;
+	background-color: #f6ddc7;
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+header {
+	border: solid #ffffff;
+	background-color: #f6ddc7;
+	color: #f6ddc7;
+	font-family: "Times New Roman", George, sans-serif;
+	font-size: 24px;
+	font-color: white;
+}
+
+h1 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 48px;
+	font-color: white;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+section {
+	border: solid #f6ddc7;
+	background-color: #f6ddc7;
+}
+
+footer {
+	border: solid #b3c2bf;
+	background-color: #b3c2bf;
+	color: white;
+	padding: 25px;
+}
+
+h1 a {
+	text-decoration: none;
+	color: #3b3a36;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+ul {
+	text-decoration: none;
+	list-style-type: none;
+}
+
+li {
+	text-decoration: none;
+	list-style =type: none;
+}
+
+.single-review-container {
+	font-family: font-family : "Helvetica Neue", Helvetica, Arial,
+		sans-serif;
+	width: calc(50%);
+	text-decoration: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+}
+
+.bus-stop-name {
+	font-family: font-family : "Helvetica Neue", Helvetica, Arial,
+		sans-serif;
+	font-color: white;
+	font-size: 18 px;
+	text-decoration: none;
+}
+
+img .bus-stop-image {
+	width: 25%
+}
+
+.my-list {
+	text-decoration: none;
+}
+
+.returntohome {
+	
+}
+
+a:hover {
+	font-color: gray;
+}

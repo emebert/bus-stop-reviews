@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Tags</title>
+<link rel="stylesheet" type="text/css" href="styles.css"></link>
+</head>
+<body>
+	<a th:href="@{/neighborhood(name=${tag})}">Return to Home</a>
+
+	<h1>Bus Stops By Neighborhood</h1>
+
+	<h2>List of All Tags</h2>
+
+	<div>
+		<ul>
+			<li th:each="currentTag: ${tags}"><a
+				th:href="@{/tag(id=${currentTag.id})}" th:text="${currentTag.name}"></a></li>
+			<li th:each="currentTag: ${tags}"><a
+				th:href="@{/tag(id=${currentTag.id})}" th:text="${currentTag.name}"></a></li>
+			<li th:each="currentTag: ${tags}"><a
+				th:href="@{/tag(id=${currentTag.id})}" th:text="${currentTag.name}"></a></li>
+		</ul>
+	</div>
+
+</body>
+</html>

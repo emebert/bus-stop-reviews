@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Bus Stops in This Neighborhood</title>
+<link rel="stylesheet" type="text/css" href="styles.css"></link>
+</head>
+<body>
+	<h1>Bus Stops in This Neighborhood</h1>
+	<p>Select a bus stop from this neighborhood to read the review.</p>
+
+	<div class="my-list">
+		<ul>
+
+			<li th:each="singleReview: ${yellow}"><a
+				th:href="@{/review(id=${singleReview.id})}"
+				th:text="${singleReview.name}"></a></li>
+		</ul>
+	</div>
+
+</body>
+</html>

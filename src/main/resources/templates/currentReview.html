@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Bus Stop Review</title>
+<link rel="stylesheet" type="text/css" href="styles.css"></link>
+</head>
+<body>
+	<h1>Review of this Stop</h1>
+
+	<div class="single-review-container">
+		<ul>
+			<li th:each="justOneReview: ${green}">
+				<p th:href="@{/review(id=${justOneReview.id})}" />
+
+				<div class="bus-stop-name" th:text="${justOneReview.name}"></div> 
+				<img class="bus-stop-image" th:src="${justOneReview.imageURL}" />
+				<p th:text="${justOneReview.review}" />
+			</li>
+
+		</ul>
+	</div>
+
+</body>
+</html>
